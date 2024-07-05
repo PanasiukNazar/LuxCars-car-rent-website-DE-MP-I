@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LuxCars</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+
+        <link rel="stylesheet" href="css/aos.css" />
+
+        <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+            id="ftco-navbar"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    >Lux<span>Cars</span></a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#ftco-nav"
+                    aria-controls="ftco-nav"
+                    aria-expanded="false"
+                    aria-label="Navigation umschalten"
+                >
+                    <span class="oi oi-menu"></span> Menü
+                </button>
+
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testimonials.html" class="nav-link"
+                                >Erfahrungsberichte</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="rent.html" class="nav-link">Mieten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link"
+                                >Dienstleistungen</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="stars.html" class="nav-link"
+                                >Glückliche Kunden</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- END nav -->
+
+        <div
+            class="hero-wrap ftco-degree-bg"
+            style="background-image: url('images/bg_1.jpg')"
+            data-stellar-background-ratio="0.5"
+        >
+            <div class="overlay"></div>
+            <div class="container">
+                <div
+                    class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
+                >
+                    <div class="col-lg-8 ftco-animate">
+                        <div class="text w-100 text-center mb-md-5 pb-md-5">
+                            <h1 class="mb-4">Willkommen bei LuxCars</h1>
+                            <p style="font-size: 18px">
+                                Entdecken Sie unsere exklusive Auswahl an
+                                Luxusfahrzeugen zur Miete und zum Verkauf. Egal
+                                ob Sie ein elegantes Fahrzeug für einen
+                                besonderen Anlass benötigen oder in ein
+                                Premium-Auto investieren möchten – bei uns sind
+                                Sie an der richtigen Adresse.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="ftco-section ftco-no-pt bg-light">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-12 featured-top">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <form
+                                    action="#"
+                                    class="request-form ftco-animate bg-primary"
+                                >
+                                    <h2>Machen Sie Ihre Reise</h2>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Abholort</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Stadt, Flughafen, Station, etc."
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Abgabeort</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Stadt, Flughafen, Station, etc."
+                                        />
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="form-group mr-2">
+                                            <label for="" class="label"
+                                                >Abholdatum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="book_pick_date"
+                                                placeholder="Datum"
+                                            />
+                                        </div>
+                                        <div class="form-group ml-2">
+                                            <label for="" class="label"
+                                                >Abgabedatum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="book_off_date"
+                                                placeholder="Datum"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Abholzeit</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="time_pick"
+                                            placeholder="Uhrzeit"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Email</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Email"
+                                        />
+                                        <div
+                                            id="result"
+                                            style="color: red; font-size: 12px"
+                                        ></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="submit"
+                                            id="submit"
+                                            onclick="sendForm()"
+                                            value="Jetzt Auto mieten"
+                                            class="btn btn-secondary py-3 px-4"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="services-wrap rounded-right w-100">
+                                    <h3 class="heading-section mb-4">
+                                        Besserer Weg, Ihr perfektes Auto zu
+                                        mieten
+                                    </h3>
+                                    <div class="row d-flex mb-4">
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-route"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Wählen Sie Ihren
+                                                        Abholort
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-handshake"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Wählen Sie das beste
+                                                        Angebot
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-rent"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Reservieren Sie Ihr
+                                                        Mietauto
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div
+                        class="col-md-12 heading-section text-center ftco-animate mb-5"
+                    >
+                        <span class="subheading">Was wir anbieten</span>
+                        <h2 class="mb-2">Empfohlene Fahrzeuge</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel-car owl-carousel">
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-1.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Audi A8 long</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Limousine</span>
+                                            <p class="price ml-auto">
+                                                200€ <span>/Tag</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-2.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Mercedes Benz E43</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Limousine</span>
+                                            <p class="price ml-auto">
+                                                500€ <span>/Tag</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-3.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#"
+                                                >Bentley Continental GT</a
+                                            >
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Limousine</span>
+                                            <p class="price ml-auto">
+                                                1500€ <span>/Tag</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-4.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">BMW X6M</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">SUV</span>
+                                            <p class="price ml-auto">
+                                                1000€ <span>/Tag</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-5.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Ferrari SF90</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Sportwagen</span>
+                                            <p class="price ml-auto">
+                                                2400€ <span>/Tag</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section ftco-about">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div
+                        class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+                        style="background-image: url(images/approach.jpg)"
+                    ></div>
+                    <div class="col-md-6 wrap-about ftco-animate">
+                        <div
+                            class="heading-section heading-section-white pl-md-5"
+                        >
+                            <span class="subheading">Unsere Philosophie</span>
+                            <h2 class="mb-4">Unser Ansatz</h2>
+
+                            <p>
+                                Wir glauben daran, dass jedes Detail zählt.
+                                Unser Ziel ist es, Ihnen ein unvergleichliches
+                                Erlebnis bei der Anmietung oder dem Kauf eines
+                                Premium-Fahrzeugs zu bieten. Unsere Leidenschaft
+                                für Luxus und Exzellenz spiegelt sich in jedem
+                                Aspekt unseres Services wider.
+                            </p>
+                            <p>
+                                Individuelle Beratung und maßgeschneiderte
+                                Lösungen Unser Ansatz beginnt mit einer
+                                individuellen Beratung. Wir nehmen uns die Zeit,
+                                Ihre Wünsche und Bedürfnisse zu verstehen, um
+                                Ihnen die besten Optionen anbieten zu können.
+                                Egal, ob Sie ein Auto für einen besonderen
+                                Anlass mieten oder in ein luxuriöses Fahrzeug
+                                investieren möchten – wir sind hier, um Ihnen zu
+                                helfen. Wir bieten Ihnen maßgeschneiderte
+                                Lösungen, die genau auf Ihre Anforderungen
+                                abgestimmt sind. Von der Auswahl des perfekten
+                                Autos bis hin zur Organisation von
+                                Sonderwünschen – unser Team steht Ihnen
+                                jederzeit zur Verfügung. Qualität und Exzellenz
+                                in jedem Detail Wir setzen auf höchste Qualität
+                                und Exzellenz in jedem Detail. Unsere Flotte
+                                besteht aus sorgfältig ausgewählten Fahrzeugen,
+                                die höchsten Ansprüchen gerecht werden. Jedes
+                                Auto wird regelmäßig gewartet und geprüft, um
+                                Ihnen ein sicheres und komfortables Fahrerlebnis
+                                zu garantieren. Unser Service endet nicht mit
+                                der Übergabe des Fahrzeugs. Wir bieten Ihnen
+                                umfassende Unterstützung während der gesamten
+                                Miet- oder Kaufdauer. Unser engagiertes Team ist
+                                stets bereit, Ihnen mit Rat und Tat zur Seite zu
+                                stehen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div
+                        class="col-md-7 text-center heading-section ftco-animate"
+                    >
+                        <span class="subheading">Unsere Dienstleistungen</span>
+                        <h2 class="mb-3">Unsere neuesten Dienste</h2>
+                        <p>
+                            Wir bieten eine breite Palette an Dienstleistungen,
+                            um Ihre Wünsche und Bedürfnisse in Bezug auf
+                            Premium-Autos zu erfüllen. Unser Ziel ist es, Ihnen
+                            ein erstklassiges Erlebnis zu bieten, egal ob Sie
+                            ein Auto mieten oder kaufen möchten. Wir setzen auf
+                            höchste Qualität und exzellenten Service, um
+                            sicherzustellen, dass Sie immer zufrieden sind.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-wedding-car"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Kurzfristige Anmietung
+                                </h3>
+                                <p>
+                                    Erleben Sie den Luxus eines
+                                    Premium-Fahrzeugs für einen Tag, ein
+                                    Wochenende oder eine Woche. Unsere
+                                    kurzfristigen Mietangebote sind ideal für
+                                    besondere Anlässe, Geschäftsreisen oder
+                                    einfach, um sich etwas Besonderes zu gönnen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-transportation"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Langfristige Vermietung
+                                </h3>
+                                <p>
+                                    Für Kunden, die ein Premium-Auto für einen
+                                    längeren Zeitraum benötigen, bieten wir
+                                    flexible Langzeitmieten. Genießen Sie die
+                                    Freiheit und den Komfort eines
+                                    Luxusfahrzeugs ohne langfristige
+                                    Verpflichtungen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-car"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">Fahrzeugverkauf</h3>
+                                <p>
+                                    Investieren Sie in Ihr Traumauto mit unserem
+                                    exklusiven Verkaufsservice. Wir bieten eine
+                                    erlesene Auswahl an neuen und gebrauchten
+                                    Luxusfahrzeugen, die höchsten
+                                    Qualitätsstandards entsprechen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-transportation"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Individuelle Beratung
+                                </h3>
+                                <p>
+                                    Unser erfahrenes Team steht Ihnen zur
+                                    Verfügung, um Sie bei der Auswahl des
+                                    perfekten Fahrzeugs zu unterstützen. Wir
+                                    bieten eine persönliche Beratung, um
+                                    sicherzustellen, dass Ihre Wünsche und
+                                    Bedürfnisse erfüllt werden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="ftco-section ftco-intro"
+            style="background-image: url(images/bg_3.jpg)"
+        >
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div
+                        class="col-md-6 heading-section heading-section-white ftco-animate"
+                    >
+                        <h2 class="mb-3">
+                            Wollen Sie mit uns verdienen? Dann kommen Sie nicht
+                            zu spät.
+                        </h2>
+                        <a href="contact.html" class="btn btn-primary btn-lg"
+                            >Kontakt uns</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div
+                        class="col-md-7 heading-section text-center ftco-animate"
+                    >
+                        <span class="subheading">Unser Blog</span>
+                        <h2>Unsere neuesten Artikel</h2>
+                        <p>
+                            Erfahren Sie mehr über die Welt der Premium-Autos
+                            mit unseren informativen Blogbeiträgen. Unser Blog
+                            bietet Ihnen Einblicke, Tipps und Neuigkeiten rund
+                            um das Thema Mieten und Kaufen von Luxusfahrzeugen.
+                            Bleiben Sie auf dem Laufenden über die neuesten
+                            Trends und Technologien der Automobilbranche.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <a
+                                href="blog-single.html"
+                                class="block-20"
+                                style="
+                                    background-image: url('images/image_1.jpg');
+                                "
+                            >
+                            </a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">Oct. 29, 2023</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            3</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Tipps zur Auswahl des richtigen
+                                        Luxusautos</a
+                                    >
+                                </h3>
+                                <p>
+                                    Erfahren Sie, wie Sie das perfekte Luxusauto
+                                    für Ihre Bedürfnisse auswählen können. Wir
+                                    geben Ihnen Tipps zur Berücksichtigung von
+                                    Leistung, Komfort und Stil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <a
+                                href="blog-single.html"
+                                class="block-20"
+                                style="
+                                    background-image: url('images/image_2.jpg');
+                                "
+                            >
+                            </a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">Sep. 09, 2023</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            12</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Neue Technologien in Luxusautos
+                                    </a>
+                                </h3>
+                                <p>
+                                    Lesen Sie mehr über die neuesten
+                                    Technologien und Innovationen in der Welt
+                                    der Luxusautos, die Ihr Fahrerlebnis
+                                    revolutionieren können.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry">
+                            <a
+                                href="blog-single.html"
+                                class="block-20"
+                                style="
+                                    background-image: url('images/image_3.jpg');
+                                "
+                            >
+                            </a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">Mai. 29, 2024</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            31</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Die Vorteile der Langzeitmiete eines
+                                        Premium-Fahrzeugs
+                                    </a>
+                                </h3>
+                                <p>
+                                    Entdecken Sie die Vorteile der langfristigen
+                                    Miete eines Luxusautos und warum dies eine
+                                    attraktive Option sein könnte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">
+                                <a href="#" class="logo"
+                                    >Lux<span>Cars</span></a
+                                >
+                            </h2>
+                            <p>
+                                Herzlich willkommen bei LuxCars, Ihrem Experten
+                                für die Anmietung und den Verkauf von
+                                Premium-Fahrzeugen. Entdecken Sie unsere
+                                exklusive Auswahl an Luxusautos und lassen Sie
+                                sich von unserem erstklassigen Service
+                                überzeugen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Kundensupport</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html" class="py-2 d-block"
+                                        >Startseite</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="about.html" class="py-2 d-block"
+                                        >Über uns</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="privacy-policy.html"
+                                        class="py-2 d-block"
+                                        >Datenschutz</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="terms-of-use.html"
+                                        class="py-2 d-block"
+                                        >AGB</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="business-model.html"
+                                        class="py-2 d-block"
+                                        >Geschäftsmodell</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Haben Sie Fragen?</h2>
+                            <div class="block-23 mb-3">
+                                <ul>
+                                    <li>
+                                        <span
+                                            class="icon icon-map-marker"
+                                        ></span
+                                        ><span class="text"
+                                            >Im Stetterfeld 1, 5608 Stetten,
+                                            Switzerland</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="icon icon-phone"
+                                            ></span
+                                            ><span class="text"
+                                                >+41565352506</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="icon icon-envelope"
+                                            ></span
+                                            ><span class="text"
+                                                >lux_cars@gmail.com</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Richtlinie</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um Ihnen ein optimales
+                    Benutzererlebnis zu bieten. Cookies sind kleine Textdateien,
+                    die auf Ihrem Gerät gespeichert werden und die
+                    Website-Funktionalität unterstützen sowie anonyme
+                    Nutzungsstatistiken liefern. Durch die Nutzung unserer
+                    Website stimmen Sie der Verwendung von Cookies gemäß unserer
+                    Cookie-Richtlinie zu.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Akzeptieren
+                </button>
+                <button class="cookie-button" id="declineBtn">Rückgang</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen">
+            <svg class="circular" width="48px" height="48px">
+                <circle
+                    class="path-bg"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    stroke="#eeeeee"
+                />
+                <circle
+                    class="path"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    stroke-miterlimit="10"
+                    stroke="#F96D00"
+                />
+            </svg>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.timepicker.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/contact-form.js"></script>
+    </body>
+</html>
