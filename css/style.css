@@ -10944,13 +10944,13 @@ h5,
     }
 }
 .hero-wrap.hero-wrap-2 {
-    height: 600px !important;
+    height: 850px !important;
     position: relative;
 }
 .hero-wrap.hero-wrap-2 .overlay {
     width: 100%;
     opacity: 0.3;
-    height: 600px;
+    height: 850px;
 }
 .hero-wrap.hero-wrap-2 .slider-text {
     height: 600px !important;
